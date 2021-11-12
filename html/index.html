@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Computer center</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <input type="text" class="computer-name" placeholder="name of computer" required />
+                <input type="date" id="delivery-date" name="delivery-date" value="2021-09-08" min="2018-01-01" max="2021-11-15">
+                <select name="delivery type" id="delivery-type" aria-placeholder="type of delivery">
+                  <option value="pickup" selected>pickup</option>
+                  <option value="home delivery">home delivery</option>
+                </select>
+                <input type="text" class="address-input" placeholder="adress" />
+                <input type="submit" class="add" />
+            </form>
+            <select id="selectID"></select>
+            <div class="buttons">
+                <button class="reset">Clear form</button>
+                <button class="show">Show all rows</button>
+                <button class="remove">Delete computer</button>
+              </div>
+              <div>
+                <button class="filter">Computers with pickup type of delivery</button>
+                <button class="add-input">Add input adress field</button>
+              </div>
+              <div class="address-tag"></div>
+              <div class="modal-table">
+                <button class="close" style="background-color: red;">X</button>
+                <table>
+                  <tr class="insertTh">
+                    <th>id</th>
+                    <th>computer name</th>
+                    <th>date of delivery</th>
+                    <th>type of delivery</th>
+
+                  </tr>
+                  <tbody class="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="../js/template.js"></script>
+    </body>
+</html>

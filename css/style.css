@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../res/comp.png");
+    background-size: cover;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: rgb(179, 235, 245) 3px solid;
+    padding: 30px 100px;
+}
+input {
+    margin: 10px;
+    padding: 3px;
+    border: 2px solid rgb(0, 4, 255);
+  }
+  
+  .selectID {
+    padding: 2px;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 4, 255);
+  }
+  .modal-table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../res/comp.png");
+    background-size: cover;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  table {
+    background-color: rgb(182, 174, 174);
+    padding: 40px;
+    border: 2px solid rgb(68, 6, 240);
+  }
+  
+  th,
+  td,
+  tr,
+  tbody {
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+  
+  .address-input {
+    display: none;
+  }
+  .button{
+    border-radius: 9%;
+  }
